@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <EditText
+        android:id="@+id/name_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:hint="Name"
+        android:inputType="textCapWords"
+        android:textSize="15sp"/>
+    <TextView
+        android:paddingTop="6dp"
+        android:id="@+id/gradind_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Which city is capital city of INDIA?"
+        android:textSize="15sp"/>
+    <EditText
+        android:id="@+id/ans_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Answer....."
+        android:inputType="textCapWords"
+        android:textSize="15sp"/>
+    <TextView
+        android:paddingTop="6dp"
+        android:id="@+id/sample_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type of Coustomer :"
+        android:textSize="15sp"/>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/old_radio_button"
+            android:paddingRight="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Old Customer"
+            android:textAppearance="?android:textAppearanceSmall" />
+        <RadioButton
+            android:id="@+id/new_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Customer"
+            android:textAppearance="?android:textAppearanceSmall" />
+    </RadioGroup>
+    <TextView
+        android:paddingTop="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type Of items purchased:"
+        android:textSize="15sp"/>
+    <CheckBox
+        android:id="@+id/g_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grocery"
+        android:textAppearance="?android:textAppearanceSmall" />
+    <CheckBox
+        android:id="@+id/s_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stationary"
+        android:textAppearance="?android:textAppearanceSmall" />
+    <CheckBox
+        android:id="@+id/c_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confectionery"
+        android:textAppearance="?android:textAppearanceSmall" />
+    <TextView
+        android:paddingTop="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Mode Of Purchase:"/>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/on_radio_button"
+            android:paddingRight="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="On Counter/ Desk / Local Store"
+            android:textAppearance="?android:textAppearanceSmall" />
+        <RadioButton
+            android:id="@+id/onl_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Online"
+            android:textAppearance="?android:textAppearanceSmall" />
+    </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How Often do you shop from us?"/>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/week_radio_button"
+            android:paddingRight="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Once in a week"
+            android:textAppearance="?android:textAppearanceSmall" />
+        <RadioButton
+            android:id="@+id/for_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Once in a fortnight"
+            android:textAppearance="?android:textAppearanceSmall" />
+    </RadioGroup>
+    <Button
+        android:layout_margin="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:onClick="submitAll"/>
+    <TextView
+        android:id="@+id/order_summary_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
